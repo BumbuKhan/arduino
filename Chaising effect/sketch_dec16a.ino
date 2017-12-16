@@ -9,13 +9,9 @@ void setup () {
 
 void loop () {
   for (int i = BASE; i < BASE + NUM; i++) {
-    digitalWrite(i, LOW); // turning LEDs one by one
-    delay(200);
-  }
-
-  for(int i = BASE; i < BASE + NUM; i++) {
     digitalWrite(i, HIGH);
-    delay(200);
+    delay(100);
+    digitalWrite(i, LOW); // turning LEDs one by one
   }
 }
 
