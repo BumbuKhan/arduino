@@ -22,7 +22,7 @@ void loop() {
 
                 if(incomingByte == 1) {
                   Serial.println("Angry");
-                  myservo.write(65);
+                  myservo.write(45); // the less this value the angriest it is 
                 } else {
                   Serial.println("Normal");
                   myservo.write(100);
